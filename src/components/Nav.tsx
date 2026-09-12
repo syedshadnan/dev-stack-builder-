@@ -7,12 +7,12 @@ const Nav = () => {
 
   return (
     <nav className="sticky bg-white top-0 z-50">
-      <div className="container mx-auto flex items-center justify-between py-4">
+      <div className="container mx-auto flex items-center justify-between px-4 py-4 sm:px-6">
         
         {/* Hamburger */}
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="cursor-pointer text-2xl md:hidden"
+          className="ml-1 cursor-pointer text-2xl md:hidden"
         >
           <GiHamburgerMenu />
         </button>

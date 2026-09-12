@@ -21,12 +21,11 @@ const Banner = () => {
           </p>
 
           <div className="my-3 flex flex-row items-center justify-center gap-3 sm:justify-center md:justify-start">
-            <button className="h-10 w-[150px] cursor-pointer rounded-lg bg-linear-to-r from-orange-500 via-pink-500 to-purple-500 px-2 text-sm font-semibold text-white hover:opacity-90 sm:w-42 sm:text-base">
-              Explore
-              <span className="hidden sm:inline"> Technologies</span>
+            <button className="h-10 w-[150px] cursor-pointer rounded-lg bg-linear-to-r from-orange-500 via-pink-500 to-purple-500 px-2 text-xs font-semibold text-white hover:opacity-90 sm:w-42 sm:text-sm md:w-[190px] md:text-base">
+              Explore Technologies
             </button>
 
-            <button className="h-10 w-[150px] cursor-pointer rounded-lg border border-gray-300 bg-white px-2 text-sm font-semibold text-gray-700 hover:bg-gray-50 sm:w-42 sm:text-base">
+            <button className="h-10 w-[150px] cursor-pointer rounded-lg border border-gray-300 bg-white px-2 text-xs font-semibold text-gray-700 hover:bg-gray-50 sm:w-42 sm:text-sm md:w-[150px] md:text-base">
               Learn More
             </button>
           </div>
