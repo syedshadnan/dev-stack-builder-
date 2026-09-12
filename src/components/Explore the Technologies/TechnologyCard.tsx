@@ -1,3 +1,4 @@
+import { toast } from "react-toastify";
 import type { ITechnology } from "../../types/technologyTypes";
 
 interface TechnologyCardProps {
@@ -12,6 +13,15 @@ const TechnologyCard = ({
   onAddToStack,
 }: TechnologyCardProps) => {
   const { name, category, description, icon, rating, difficulty, badge } = technologies;
+
+  const handleAddClick = () => {
+    if (isSelected) {
+      toast.warning(`${name} is already in your stack.`);
+      return;
+    }
+
+    onAddToStack(technologies);
+  };
 
   return (
     <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md">
@@ -48,7 +58,7 @@ const TechnologyCard = ({
 
       <button
         type="button"
-        onClick={() => onAddToStack(technologies)}
+        onClick={handleAddClick}
         disabled={isSelected}
         className={`mt-5 w-full rounded-xl px-3 py-2.5 text-sm font-semibold transition cursor-pointer ${
           isSelected

@@ -64,8 +64,8 @@ const ExploreTechnology = ({
               <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">
                 Your Stack
               </p>
-              <h3 className="mt-1 text-2xl font-bold text-slate-800">
-                {selectedStack.length}
+              <h3 className="mt-1 text-lg text-slate-500">
+                {selectedStack.length} {selectedStack.length === 1 ? "Technology" : "Technologies"} Selected
               </h3>
             </div>
 
