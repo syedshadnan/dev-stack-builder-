@@ -7,9 +7,9 @@ const Banner = () => {
 
         {/* Left Content */}
         <div className="w-full text-center md:w-[50%] md:text-left">
-          <h2 className="text-3xl font-bold leading-tight sm:text-4xl md:text-5xl lg:text-6xl">
+          <h2 className="text-[2rem] font-bold leading-[1.1] sm:text-4xl md:text-5xl lg:text-6xl">
             Build Your Ideal
-            <span className="mt-2 block bg-linear-to-r from-orange-500 via-pink-500 to-purple-600 bg-clip-text font-bold text-transparent md:mt-0 md:inline">
+            <span className="mt-2 block bg-linear-to-r from-orange-500 via-pink-500 to-purple-600 bg-clip-text text-[1.6rem] font-bold text-transparent sm:text-[2.2rem] md:mt-0 md:inline md:text-[3.2rem] lg:text-[4rem]">
               {" "}Development Stack
             </span>
           </h2>
@@ -21,11 +21,12 @@ const Banner = () => {
           </p>
 
           <div className="my-3 flex flex-row items-center justify-center gap-3 sm:justify-center md:justify-start">
-            <button className="h-10 w-[150px] cursor-pointer rounded-lg bg-linear-to-r from-orange-500 via-pink-500 to-purple-500 font-semibold text-white hover:opacity-90 sm:w-42">
-              Explore Technologies
+            <button className="h-10 w-[150px] cursor-pointer rounded-lg bg-linear-to-r from-orange-500 via-pink-500 to-purple-500 px-2 text-sm font-semibold text-white hover:opacity-90 sm:w-42 sm:text-base">
+              Explore
+              <span className="hidden sm:inline"> Technologies</span>
             </button>
 
-            <button className="h-10 w-[150px] cursor-pointer rounded-lg border border-gray-300 bg-white text-gray-700 hover:bg-gray-50 sm:w-42">
+            <button className="h-10 w-[150px] cursor-pointer rounded-lg border border-gray-300 bg-white px-2 text-sm font-semibold text-gray-700 hover:bg-gray-50 sm:w-42 sm:text-base">
               Learn More
             </button>
           </div>
