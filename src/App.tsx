@@ -3,6 +3,7 @@ import { toast } from "react-toastify";
 import Nav from "./components/Nav";
 import Banner from "./components/Banner";
 import ExploreTechnology from "./components/Explore the Technologies/ExploreTechnology";
+import Footer from "./components/Footer";
 import type { ITechnology } from "./types/technologyTypes";
 
 function App() {
@@ -68,6 +69,7 @@ function App() {
         onRemoveFromStack={handleRemoveFromStack}
         onRemoveAll={handleRemoveAll}
       />
+      <Footer />
     </div>
   );
 }

@@ -50,7 +50,7 @@ const TechnologyCard = ({
         type="button"
         onClick={() => onAddToStack(technologies)}
         disabled={isSelected}
-        className={`mt-5 w-full rounded-xl px-3 py-2.5 text-sm font-semibold transition ${
+        className={`mt-5 w-full rounded-xl px-3 py-2.5 text-sm font-semibold transition cursor-pointer ${
           isSelected
             ? "cursor-default bg-emerald-100 text-emerald-700"
             : "bg-slate-900 text-white hover:bg-slate-800"
