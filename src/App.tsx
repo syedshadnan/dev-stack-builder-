@@ -28,7 +28,7 @@ function App() {
     const alreadySelected = selectedStack.some((item) => item.id === technology.id);
 
     if (alreadySelected) {
-      toast.warning(`${technology.name} is already in your stack.`);
+      toast.error(`${technology.name} is already in your stack.`);
       return;
     }
 

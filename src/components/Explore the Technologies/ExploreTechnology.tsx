@@ -20,8 +20,11 @@ const ExploreTechnology = ({
 }: ExploreTechnologyProps) => {
   if (loading) {
     return (
-      <div className="container mx-auto py-8 text-center text-slate-500">
-        Loading technologies...
+      <div className="container mx-auto flex min-h-[240px] items-center justify-center py-10 text-slate-500">
+        <div className="flex items-center gap-3 rounded-full border border-slate-200 bg-white px-5 py-3 shadow-sm">
+          <span className="h-5 w-5 animate-spin rounded-full border-2 border-slate-300 border-t-slate-800" />
+          <span className="text-sm font-medium">Loading technologies...</span>
+        </div>
       </div>
     );
   }
