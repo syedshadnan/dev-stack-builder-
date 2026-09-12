@@ -50,4 +50,6 @@ Conditional rendering means showing different UI depending on a condition. In th
 A parent passes data to a child using props. For example, the technology list is passed to the card component as props. A child sends data back to the parent by calling a function passed from the parent as a prop, like the add/remove action handlers.
 
 ## Live Project
+Live Demo: [dev-stack-builder-react.netlify.app](https://dev-stack-builder-react.netlify.app/)
+
 This project is built with React and styled using Tailwind CSS to create a clean developer-focused interface.
